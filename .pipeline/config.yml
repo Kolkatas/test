@@ -11,7 +11,7 @@ general:
 pipeline: "sap-cloud-sdk"
 buildTool: "mta"
 stages:
-Build:
+Build: "mbt build"
 mavenExecuteStaticCodeChecks: false
 npmExecuteLint: false
 Additional Unit Tests:
