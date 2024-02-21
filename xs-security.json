@@ -1,0 +1,25 @@
+{
+  "xsappname": "test",
+  "tenant-mode": "dedicated",
+  "description": "Security profile of called application",
+  "scopes": [
+    {
+      "name": "uaa.user",
+      "description": "UAA"
+    }
+  ],
+  "role-templates": [
+    {
+      "name": "Token_Exchange",
+      "description": "UAA",
+      "scope-references": [
+        "uaa.user"
+      ]
+    }
+  ],
+  "oauth2-configuration": {
+    "redirect-uris": [
+        "https://f91a2170trial-dev-test.cfapps.us10-001.hana.ondemand.com/login/callback"
+    ]
+} 
+}
